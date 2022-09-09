@@ -42,7 +42,7 @@ type GetNodeResponse struct {
 
 type GetConfiguration struct {
 	XMLName      string               `xml:"tptz:GetConfiguration"`
-	ProfileToken onvif.ReferenceToken `xml:"tptz:ProfileToken"`
+	ConfigurationToken onvif.ReferenceToken `xml:"tptz:ConfigurationToken"`
 }
 
 type GetConfigurationResponse struct {
@@ -68,7 +68,7 @@ type SetConfigurationResponse struct {
 
 type GetConfigurationOptions struct {
 	XMLName      string               `xml:"tptz:GetConfigurationOptions"`
-	ProfileToken onvif.ReferenceToken `xml:"tptz:ProfileToken"`
+	ConfigurationToken onvif.ReferenceToken `xml:"tptz:ConfigurationToken"`
 }
 
 type GetConfigurationOptionsResponse struct {
