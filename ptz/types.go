@@ -41,7 +41,7 @@ type GetNodeResponse struct {
 }
 
 type GetConfiguration struct {
-	XMLName      string               `xml:"tptz:GetConfiguration"`
+	XMLName            string               `xml:"tptz:GetConfiguration"`
 	ConfigurationToken onvif.ReferenceToken `xml:"tptz:ConfigurationToken"`
 }
 
@@ -67,7 +67,7 @@ type SetConfigurationResponse struct {
 }
 
 type GetConfigurationOptions struct {
-	XMLName      string               `xml:"tptz:GetConfigurationOptions"`
+	XMLName            string               `xml:"tptz:GetConfigurationOptions"`
 	ConfigurationToken onvif.ReferenceToken `xml:"tptz:ConfigurationToken"`
 }
 
@@ -91,7 +91,7 @@ type GetPresets struct {
 }
 
 type GetPresetsResponse struct {
-	Preset onvif.PTZPreset
+	Presets []onvif.PTZPreset `xml:"Preset"`
 }
 
 type SetPreset struct {
